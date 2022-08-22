@@ -1,0 +1,17 @@
+{
+  "name": "web",
+  "file": {
+    "src": [
+      "**/*.php"
+    ]
+  },
+  "css": {
+    "src": [
+      "scss/**/*.scss"
+    ],
+    "dest": "css"
+  },
+  "browsersync": {
+    "proxy": "local.app"
+  }
+}

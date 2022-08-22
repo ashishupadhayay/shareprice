@@ -1,0 +1,12 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: dockerfile.web
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - .:/var/www/html:cached
+      - ../github-shareprice.json:/var/www/github-shareprice.json:cached
